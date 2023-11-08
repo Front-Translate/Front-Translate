@@ -88,18 +88,8 @@ html {
 
 * {
   box-sizing: border-box;
-  font-family:
-    NanumMyeongjo,
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
+  font-family: NanumMyeongjo, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
 }
 
@@ -155,29 +145,26 @@ button {
 }
 
 @font-face {
-  font-family: "Nanum Myeongjo";
+  font-family: 'Nanum Myeongjo';
   font-style: normal;
   font-weight: 400;
-  src:
-    local("Nanum-Myeongjo"),
-    url("./styles/fonts/NanumMyeongjo.otf") format("otf"),
-    url("./styles/fonts/NanumMyeongjo.ttf") format("truetype");
+  src: local('Nanum-Myeongjo'),
+    url('./styles/fonts/NanumMyeongjo.otf') format('otf'),
+    url('./styles/fonts/NanumMyeongjo.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Nanum Myeongjo";
+  font-family: 'Nanum Myeongjo';
   font-style: normal;
   font-weight: 700;
-  src:
-    url("./styles/fonts/NanumMyeongjoBold.otf") format("otf"),
-    url("./styles/fonts/NanumMyeongjoBold.ttf") format("truetype");
+  src: url('./styles/fonts/NanumMyeongjoBold.otf') format('otf'),
+    url('./styles/fonts/NanumMyeongjoBold.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Nanum Myeongjo";
+  font-family: 'Nanum Myeongjo';
   font-style: normal;
   font-weight: 800;
-  src:
-    url("./styles/fonts/NanumMyeongjoExtraBold.otf") format("otf"),
-    url("./styles/fonts/NanumMyeongjoExtraBold.ttf") format("truetype");
+  src: url('./styles/fonts/NanumMyeongjoExtraBold.otf') format('otf'),
+    url('./styles/fonts/NanumMyeongjoExtraBold.ttf') format('truetype');
 }
