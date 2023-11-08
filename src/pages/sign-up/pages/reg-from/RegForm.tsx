@@ -54,7 +54,7 @@ const RegForm = () => {
               <div className={styles.input}>
                 <InputSubtitle
                   value={confirmPassword}
-                  onChange={(value) => setConfirmPassword(value)}
+                  onChange={(value: string) => setConfirmPassword(value)}
                   text={
                     password === confirmPassword
                       ? ""
@@ -67,7 +67,7 @@ const RegForm = () => {
           </div>
           <div className={styles.inputSection}>
             <div className={styles.inputTitle}>
-              3. 인증번호를 위해 이메일을 입력해주세요.
+              3. 인증을 위해 이메일을 입력해주세요.
             </div>
             <div className={styles.inputContainer}>
               <div className={styles.inputSubTitle}>이메일</div>

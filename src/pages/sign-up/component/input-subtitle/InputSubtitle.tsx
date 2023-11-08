@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import styles from "./InputSubtitle.module.scss";
 
 const InputSubtitle: React.FC<{
@@ -7,6 +8,12 @@ const InputSubtitle: React.FC<{
   text: string;
   hide?: boolean;
 }> = ({ value, onChange, text, hide = false }) => {
+  const [focused, setFocused] = useState<boolean>(false);
+
+  const focuseHandler = () => {
+    setFocused(true);
+  };
+
   return (
     <>
       <div className={styles.container}>
@@ -15,8 +22,9 @@ const InputSubtitle: React.FC<{
           type={hide ? "password" : "text"}
           defaultValue={value}
           onChange={(e) => onChange(e.target.value)}
+          onFocus={focuseHandler}
         />
-        <div className={styles.inputSubTitle}>{text}</div>
+        {focused && <div className={styles.inputSubTitle}>{text}</div>}
       </div>
     </>
   );

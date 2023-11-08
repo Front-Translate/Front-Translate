@@ -1,48 +1,45 @@
+@import "@styles/global";
+
 .container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f1f1f2;
+  @include flex-center;
+  width: 50vw;
+  height: 100%;
 }
 
 .content {
-  width: 60%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
+  width: 100%;
+  height: 600px;
   align-items: center;
   justify-content: space-around;
 }
 
 .pageTitleSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex-column-center;
 }
 
 .pageTitle {
-  color: #5b635e;
+  @include medium-100;
+  color: var(--color-gray);
   text-align: center;
   margin-bottom: 20px;
 }
 
 .pageSubTitle {
-  color: #003d2b;
+  @include small-100;
+  color: var(--color-green-1);
 }
 
 // table section
 .tableSection {
-  width: 80%;
+  width: 100%;
   height: 350px;
 }
 
 .table {
+  @include flex;
   width: 100%;
   height: 100%;
-  display: flex;
 }
 
 .tableTitles {
@@ -51,47 +48,44 @@
 }
 
 .tableTitle {
-  width: 90%;
+  @include flex-center;
+  @include base-bold;
+  width: 80%;
   height: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #003d2b;
-  border-bottom: 1.5px solid grey;
+  color: var(--color-green-2);
+  border-bottom: 1.5px solid var(--color-light-gray);
 }
 
 .tableContents {
   width: 100%;
   height: 100%;
-  background-color: white;
-  border: 1px solid #aeaeae;
+  background-color: var(--color-white);
+  border: 0.5px solid var(--color-light-gray);
 }
 
 .tableRow {
+  @include flex;
   width: 100%;
   height: 25%;
-  display: flex;
   align-items: center;
 }
 
 .contentBox {
+  @include flex-center;
+  @include small-medium;
   width: 100%;
   height: 100%;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #5b635e;
   cursor: pointer;
   position: relative;
 }
 
 .contentRightBorder {
-  border-right: 1px solid #aeaeae;
+  border-right: 0.5px solid var(--color-light-gray);
 }
 
 .contentBottomBorder {
-  border-bottom: 1px solid #aeaeae;
+  border-bottom: 0.5px solid var(--color-light-gray);
 }
 
 .contentButton {
@@ -115,7 +109,7 @@
 .contentCheckedMark {
   width: 0;
   height: 0;
-  border-top: 20px solid #f45a1e;
+  border-top: 20px solid var(--color-orange);
   border-right: 20px solid rgba(128, 128, 128, 0.1);
 }
 
