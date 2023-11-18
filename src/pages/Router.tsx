@@ -6,6 +6,7 @@ import RegForm from "./sign-up/pages/reg-from/RegForm";
 import Home from "./Home/Home";
 import Login from "@pages/User/Login";
 import KCallback from "@/components/Oauth/KCallback";
+import Detail from "./detail/Detail";
 
 export default function Router() {
   return (
@@ -16,6 +17,7 @@ export default function Router() {
       <Route path="/signup/complete" element={<Complete />} />
       <Route path="/login" element={<Login />} />
       <Route path="/oauth/kakaocallback" element={<KCallback />} />
+      <Route path="/detail" element={<Detail />} />
     </Routes>
   );
 }
