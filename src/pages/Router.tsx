@@ -9,6 +9,7 @@ import KCallback from "@/components/Oauth/KCallback";
 import ContentDetail from "./content-detail/ContentDetail";
 import WriterDetail from "./writer-detail/WriterDetail";
 import Main from "./main/Main";
+import Portfolio from './Portfolio/Portfolio';
 
 export default function Router() {
   return (
@@ -22,6 +23,7 @@ export default function Router() {
       <Route path="/main" element={<Main />} />
       <Route path="/content-detail" element={<ContentDetail />} />
       <Route path="/writer-detail" element={<WriterDetail />} />
+      <Route path='/mypage/portfolio' element={<Portfolio />} />
     </Routes>
   );
 }
