@@ -41,6 +41,14 @@
   cursor: pointer;
 }
 
+@mixin overflow-hidden {
+  overflow: hidden;
+}
+
+@mixin overflow-scroll {
+  overflow: scroll;
+}
+
 /* 개별 속성 */
 @mixin global-button {
   padding: 20px 0;

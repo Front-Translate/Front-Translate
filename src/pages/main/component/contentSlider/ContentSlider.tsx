@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ThumbnailCardFolderable from "@/components/thumbnail-card/thumbnail-card-folderable/ThumbnailCardFolderable";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Arrow from "../arrow/Arrow";
 
 const sliderContents = [1, 2, 3, 4, 5, 6, 7, 8];
